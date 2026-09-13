@@ -19,8 +19,10 @@ Apartment Navigation is a browser-based wayfinding tool for an apartment complex
 Install dependencies:
 
 ```bash
-npm install
+npm install --legacy-peer-deps
 ```
+
+The legacy peer resolution flag is currently required because the project uses Vite 8 while `@tailwindcss/vite` declares support through Vite 7.
 
 Start the development server:
 
